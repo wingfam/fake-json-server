@@ -9,10 +9,10 @@ module.exports = function () {
         name: faker.name.findName(),
         email: faker.internet.email(),
         phoneNumber: faker.phone.phoneNumber(),
-        avatar: faker.internet.avatar(),
+        avatar: "https://icons-for-free.com/iconfiles/png/512/business+costume+male+man+office+user+icon-1320196264882354682.png",
         address: faker.address.streetAddress(),
-        status: faker.datatype.boolean(),
-        cv: faker.datatype.boolean(),
+        status: "Active",
+        cv: "Yes",
         birthday: faker.date.between("1980-01-01", "2000-01-01"),
         created_time: faker.date.between("2021-11-01", "2021-12-01"),
       };
@@ -25,12 +25,12 @@ module.exports = function () {
         phoneNumber: faker.phone.phoneNumber(),
         avatar: faker.image.business(),
         address: faker.address.streetAddress(),
-        status: faker.datatype.boolean(),
+        status: "Active",
         userAccountId: faker.datatype.number({
           min: 0,
           max: 10,
         }),
-        status: faker.datatype.boolean(),
+        status: "Active",
         createdTime: "2021-11-28T09:24:46.592Z",
       };
     }),
@@ -61,7 +61,7 @@ module.exports = function () {
         }),
         starttime: faker.date.between("2021-11-01", "2021-12-01"),
         endtime: faker.date.between("2021-11-01", "2021-12-01"),
-        status: faker.datatype.boolean(),
+        status: "Active",
         link: faker.datatype.string(10),
         description: faker.datatype.string(10),
         evaluation: faker.datatype.string(10),
@@ -97,7 +97,7 @@ module.exports = function () {
           max: 10,
         }),
         createdTime: faker.date.between("2021-11-01", "2021-12-01"),
-        status: faker.datatype.boolean(),
+        status: "Active",
       };
     }),
     Jobs: lodash.times(20, function (n) {
@@ -108,7 +108,7 @@ module.exports = function () {
           min: 0,
           max: 10,
         }),
-        status: faker.datatype.boolean(),
+        status: "Active",
       };
     }),
     Notifications: lodash.times(3, function (n) {
@@ -129,7 +129,7 @@ module.exports = function () {
           min: 0,
           max: 10,
         }),
-        status: faker.datatype.boolean(),
+        status: "Active",
       };
     }),
     Recruitments: lodash.times(20, function (n) {
@@ -191,7 +191,7 @@ module.exports = function () {
           min: 0,
           max: 20,
         }),
-        status: faker.datatype.boolean(),
+        status: "Active",
       };
     }),
     UserPayments: lodash.times(15, function (n) {
@@ -203,14 +203,14 @@ module.exports = function () {
         }),
         name: faker.name.title(),
         description: faker.datatype.string(10),
-        status: faker.datatype.boolean(),
+        status: "Active",
       };
     }),
     UserRoles: lodash.times(5, function (n) {
       return {
         id: n,
         name: faker.name.title(),
-        status: faker.datatype.boolean(),
+        status: "Active",
       };
     }),
     Welfare: lodash.times(10, function (n) {
@@ -221,10 +221,10 @@ module.exports = function () {
           min: 0,
           max: 20,
         }),
-        status: faker.datatype.boolean(),
+        status: "Active",
       };
     }),
-    Works: lodash.times(10, function (n) {
+    Works: lodash.times(20, function (n) {
       return {
         id: n,
         companyId: faker.datatype.number({
@@ -239,7 +239,7 @@ module.exports = function () {
           min: 0,
           max: 20,
         }),
-        status: faker.datatype.boolean(),
+        status: "Active",
         starttime: faker.date.between("2021-11-01", "2021-12-01"),
         endtime: faker.date.between("2021-11-01", "2021-12-01"),
       };
