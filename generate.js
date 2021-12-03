@@ -85,6 +85,21 @@ module.exports = function () {
         }),
       };
     }),
+    Events: lodash.times(20, function (n) {
+      return {
+        id: n,
+        title: faker.name.jobTitle(),
+        image: faker.image.cats(),
+        description: faker.datatype.string(10),
+        userAccountId: faker.datatype.number({
+          min: 0,
+          max: 20,
+        }),
+        createdDate: faker.date.between("2021-11-01", "2021-12-01"),
+        starttime: faker.date.between("2021-11-01", "2021-12-01"),
+        endtime: faker.date.between("2021-11-01", "2021-12-01"),
+      };
+    }),
     Invoices: lodash.times(20, function (n) {
       return {
         id: n,
